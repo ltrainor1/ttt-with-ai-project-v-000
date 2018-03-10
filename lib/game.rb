@@ -45,9 +45,9 @@ end
 
 def turn
 player = self.current_player
-input = player.send :gets
+input = player.move(@board)
 until @board.valid_move?(input)
-  input = player.send :gets
+  input = player.move(@board)
 end
   @board.update(input, player)
 end

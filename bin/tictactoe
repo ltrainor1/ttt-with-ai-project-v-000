@@ -2,4 +2,7 @@
 
 require_relative '../config/environment'
 
-Game.new(Human.new("X"), Human.new("O")).play
+new_game = Game.new(Human.new("X"), Human.new("O"))
+new_game.display_board
+new_game.play
+

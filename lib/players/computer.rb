@@ -22,3 +22,4 @@ class Computer < Players
     index = 1 + rand(9)
     index.to_s
 end
+end 

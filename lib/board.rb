@@ -24,7 +24,7 @@ def position(n)
 end
 
 def full?
-  @cells.detect{|cell| cell == " "} ? false : true
+  @cells.any? {|cell| cell == " "} ? false : true
   end
 
 def turn_count

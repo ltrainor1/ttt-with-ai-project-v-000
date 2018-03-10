@@ -7,10 +7,10 @@ class Computer < Players
 wins = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 
     good_combo = wins.detect do |combo|
-      combo = combo.each {|space| space += 1}
-      a = board.taken(combo(1)) && board.taken(combo(2))
-      b = board.taken(combo(1)) && board.taken(combo(3))
-      c = board.taken(combo(2)) && board.taken(combo(3))
+      combo.each {|space| space += 1}
+      a = board.taken(combo[1]) && board.taken(combo[2])
+      b = board.taken(combo[1]) && board.taken(combo[3])
+      c = board.taken(combo(2)) && board.taken(combo[3])
       a || b || c
       if a
         index = combo[3]

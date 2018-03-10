@@ -4,7 +4,7 @@ class Computer < Players
 
       index = 5
 
-    good_combo = wins.detect do |combo|
+    good_combo = WIN_COMBINATIONS.detect do |combo|
       combo = combo.each {|space| space += 1}
       a = board.taken(combo(1)) && board.taken(combo(2))
       b = board.taken(combo(1)) && board.taken(combo(3))

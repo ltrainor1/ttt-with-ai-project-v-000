@@ -57,7 +57,7 @@ def play
   #while self.won? == false || @board.full? == false
 until self.over?
     self.turn
-    @board.display 
+    @board.display
   end
 
   if self.won?

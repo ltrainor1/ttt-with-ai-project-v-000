@@ -6,10 +6,10 @@ class Computer < Players
 
     index = 1 + rand(9)
     index.to_s
-    
+
     if board.cells.all? {|cell| cell == " "}
-      index = 5 
-    end 
+      index = 5
+    end
 
   end
 end

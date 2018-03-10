@@ -2,4 +2,4 @@
 
 require_relative '../config/environment'
 
-Game.new(Computer.new("X"), Computer.new("O")).play
+Game.new(Human.new("X"), Human.new("O")).play
